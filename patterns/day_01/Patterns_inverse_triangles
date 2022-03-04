@@ -1,0 +1,187 @@
+"""
+Created on Fri Mar  4 12:33:23 2022
+
+@author: Nazish
+"""
+n = int(input('Enter the number of row : '))
+# =============================================================================
+# Rough 
+# =============================================================================
+
+for j in range(n):
+    print('*',end=' ')
+
+for i in range(n):
+    for j in range(n):
+        print('*',end=' ')
+# =============================================================================
+# Square/Rectangle 
+# =============================================================================
+
+for i in range(n):
+    for j in range(n):
+        print('*',end=' ')
+    print()
+# =============================================================================
+# Pyramid
+# =============================================================================
+
+for i in range(n):     
+    for j in range(n-i-1):
+        print(end=' ')
+    for j in range(i+1):
+        print('*',end=' ')  
+    print() 
+# =============================================================================
+# Increasing and Decreasing triangle
+# =============================================================================
+
+""" Increasing triangle """
+for i in range(n):
+    for j in range(i+1):
+        print('*',end=' ')
+    print()
+
+""" Decreasing triangle """
+
+for i in range(n):     
+    for j in range(i,n):
+        print('*',end=' ')
+    print() 
+# =============================================================================
+# Right Sided Triangle....Increasing Stars
+# =============================================================================
+for i in range(n):
+    for j in range(i+1):
+        print('*',end=' ')
+    print()
+# =============================================================================
+# Left Sided Triangle....Increasing Space + Decreasing Stars
+# =============================================================================
+for i in range(n): 
+  for j in range(i, n): 
+     print(' ', end=' ') 
+  for j in range(i+1):
+     print('*', end=' ')
+  print()
+# =============================================================================
+# Right Downward Triangle
+# =============================================================================
+for i in range(n):     
+    for j in range(i,n):
+        print('*',end=' ')
+    print()
+# =============================================================================
+# Left Downward Triangle
+# =============================================================================
+
+
+for i in range(n): 
+  for j in range(i+1): 
+     print(' ', end=' ') 
+  for j in range(i,n):
+     print('*', end=' ')
+  print()
+# =============================================================================
+# Reverse Pyramid
+# =============================================================================
+
+for i in range(n):     
+    for j in range(i+1):
+        print(end=' ')
+    for j in range(n-i):
+        print('*',end=' ')  
+    print() 
+# =============================================================================
+# butterfly
+# =============================================================================
+
+for i in range(n-1): 
+  for j in range(i+1):
+     print('*',end=' ')
+  for j in range(i,n-1):
+     print(' ',end=' ')
+  for j in range(i, n-1): 
+     print(' ', end=' ') 
+  for j in range(i+1):
+     print('*', end=' ')
+  print()
+for i in range(n):     
+    for j in range(i,n):
+        print('*',end=' ')
+    for j in range(i):        
+        print(' ',end=' ')
+    for j in range(i):
+        print(' ',end=' ')
+    for j in range(i,n):
+        print('*',end=' ')
+        
+    print() 
+
+
+# =============================================================================
+# Diamond
+# =============================================================================
+
+for i in range(n):     
+    for j in range(n-i-1):
+        print(end=' ')
+    for j in range(i+1):
+        print('*',end=' ')  
+    print() 
+for i in range(n):     
+    for j in range(i+1):
+        print(end=' ')
+    for j in range(n-i-1):
+        print('*',end=' ')  
+    print() 
+
+# =============================================================================
+# Sandglass
+# =============================================================================
+
+for i in range(n):     
+    for j in range(i+1):
+        print(end=' ')
+    for j in range(n-i):
+        print('*',end=' ')  
+    print() 
+    
+for i in range(n):     
+    for j in range(n-i):
+        print(end=' ')
+    for j in range(i+1):
+        print('*',end=' ')  
+    print() 
+
+# =============================================================================
+# Left Pascal's Triangle
+# =============================================================================
+
+for i in range(n):
+    for j in range(i+1):
+        print('*',end=' ')
+    print()
+
+for i in range(n):     
+    for j in range(i,n-1):
+        print('*',end=' ')
+    print() 
+
+# =============================================================================
+# Right Pascal's Triangle
+# =============================================================================
+
+for i in range(n-1):     
+    for j in range(i,n):
+        print(' ',end=' ')
+    for j in range(i+1):
+        print('*',end=' ')   
+    print() 
+
+for i in range(n):
+    for j in range(i+1):
+        print(' ',end=' ')
+    for j in range(i,n):
+        print('*',end=' ')       
+    print()
